@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ✅ Font Awesome (latest, for all icons) -->
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    
+    <!-- ✅ HEADER + NAVIGATION -->
+<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+  <div class="container">
+    <!-- Company Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="assets/images/logo.png" alt="Indtek Logo" class="me-2">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+        <!-- ✅ Dropdown Menu for Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="sales.html">Sales</a></li>
+            <li><a class="dropdown-item" href="services.html">Services</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+  </div>
+</header>
+    <!-- ✅ BLOG / LATEST UPDATES SECTION -->
+<section id="blog" class="blog-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h5 class="text-orange text-uppercase fw-semibold mb-2">Latest Updates</h5>
+      <h2 class="fw-bold text-dark mb-3">News & Insights</h2>
+      <p class="text-muted mx-auto" style="max-width:700px;">
+        Stay informed with the latest developments, innovations, and events from Indtek — where technology meets precision.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <!-- 🔹 Blog Card 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card shadow-sm rounded-4 overflow-hidden">
+          <div class="blog-img">
+            <img src="assets/images/blog.jpg" alt="Workshop" class="img-fluid">
+          </div>
+          <div class="p-4">
+            <h5 class="fw-bold text-dark mb-2">Indtek Technical Workshop 2025</h5>
+            <p class="text-muted mb-3">
+              Highlights from our November 2025 workshop focused on precision calibration and emerging testing technologies.
+            </p>
+            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🔹 Blog Card 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card shadow-sm rounded-4 overflow-hidden">
+          <div class="blog-img">
+            <img src="assets/images/blog.jpg" alt="Calibration" class="img-fluid">
+          </div>
+          <div class="p-4">
+            <h5 class="fw-bold text-dark mb-2">Calibration Standards Symposium</h5>
+            <p class="text-muted mb-3">
+              Indtek participates in the December 2025 symposium to discuss next-gen calibration standards and best practices.
+            </p>
+            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🔹 Blog Card 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card shadow-sm rounded-4 overflow-hidden">
+          <div class="blog-img">
+            <img src="assets/images/blog.jpg" alt="Expo" class="img-fluid">
+          </div>
+          <div class="p-4">
+            <h5 class="fw-bold text-dark mb-2">Foundry & Testing Expo 2026</h5>
+            <p class="text-muted mb-3">
+              Join us this January 2026 as Indtek showcases advanced sand-testing machines and calibration solutions.
+            </p>
+            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ✅ FOOTER SECTION -->
+
+<footer class="footer-section pt-5 pb-4 text-light">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- 🔹 1. Company Info -->
+      <div class="col-lg-4 col-md-6">
+        <img src="assets/images/logo.png" alt="Indtek Logo" class="mb-3" width="160">
+        <p class="text-white-50">
+          INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP (IEC) — Delivering reliable, precise, and innovative testing
+          equipment and calibration solutions since 2013.
+        </p>
+      </div>
+
+      <!-- 🔹 2. Quick Links -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold text-orange mb-3">Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- 🔹 3. Contact Info -->
+      <div class="col-lg-5 col-md-12">
+        <h5 class="fw-bold text-orange mb-3">Contact Us</h5>
+        <ul class="list-unstyled text-white-50 mb-3">
+          <li><i class="fas fa-map-marker-alt me-2 text-orange"></i> No.19, SF No: 476/4, Lakshmi Garden 3A, Balaji Industrial Estate, Keeranatham, Coimbatore - 641035</li>
+          <li><i class="fas fa-phone me-2 text-orange"></i> +91 902 5858 360 / +91 99 5250 2221</li>
+          <li><i class="fas fa-envelope me-2 text-orange"></i> admin@indtek.co.in</li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="social-links">
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="mt-5 mb-3 text-white-50">
+
+    <!-- Copyright -->
+    <div class="text-center small text-white-50">
+      © <span id="year"></span> INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP. All Rights Reserved.
+    </div>
+  </div>
+
+  <!-- 🡅 Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+</footer>
+<!-- ✅ Bootstrap Bundle JS (Includes Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

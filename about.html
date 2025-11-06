@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+  <!-- ✅ AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+      <!-- ✅ Font Awesome (latest, for all icons) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- ✅ Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+      
+      
+      <style>
+    body {
+  
+      overflow-x: hidden;
+    }
+    .text-orange { color: #ff6600; }
+    h2, h3, h4 { color: #002b5b; }
+
+    section { padding: 80px 0; }
+    p { line-height: 1.7; }
+
+    /* Hero / Banner */
+    .about-hero {
+      background: linear-gradient(rgba(0,43,91,0.7), rgba(0,43,91,0.7)),
+                  url('img/about-banner.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 150px 20px;
+    }
+    .about-hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    /* Central Main Image */
+    .main-photo {
+      display: block;
+      margin: 40px auto;
+      max-width: 700px;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      transition: transform 0.5s ease;
+    }
+    .main-photo:hover { transform: scale(1.03); }
+
+    /* Section Images */
+    .section-image {
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: transform 0.4s ease;
+    }
+    .section-image:hover { transform: scale(1.05); }
+
+    /* Card Style */
+    .quality-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: transform 0.4s ease;
+    }
+    .quality-card:hover { transform: translateY(-5px); }
+
+    /* AOS */
+    [data-aos-delay] { transition-delay: .3s; }
+
+    @media (max-width: 768px) {
+      .about-hero h1 { font-size: 2rem; }
+      .main-photo { max-width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+    
+    <!-- ✅ HEADER + NAVIGATION -->
+<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+  <div class="container">
+    <!-- Company Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="assets/images/logo.png" alt="Indtek Logo"  class="me-2">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+        <!-- ✅ Dropdown Menu for Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="sales.html">Sales</a></li>
+            <li><a class="dropdown-item" href="services.html">Services</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+  </div>
+</header>
+
+<!-- ✅ HERO SECTION -->
+<section class="about-hero" data-aos="fade-zoom-in">
+  <h1>About <span class="text-orange">Indtek</span></h1>
+  <p>Established in 2013 — serving with precision and trust across India.</p>
+</section>
+
+<!-- ✅ SECTION 1: About INDTEK -->
+<section id="about-indtek">
+  <div class="container" data-aos="fade-up">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold mb-3">About Us</h2>
+      <h4 class="text-orange mb-4">INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP (IEC)</h4>
+    </div>
+
+    <img src="assets/images/about/about.png" alt="Indtek Main Photo" class="main-photo" data-aos="zoom-in">
+
+    <p class="mt-4">
+      INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP (IEC) was established in 2013,
+      initially under the name <strong>Indian Technologies</strong>. With a vision to expand
+      and streamline operations in testing equipment and calibration services, the company was
+      restructured and renamed as INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP.
+    </p>
+    <p>
+      From inception, IEC combined technical expertise with customer-focused solutions.
+      Starting with four partners, the company showed resilience through transitions and
+      growth. In 2025, the partnership expanded to three, marking another milestone in IEC’s journey.
+    </p>
+    <p>
+      Today, IEC continues to lead in the sales, service, and on-site calibration of testing
+      equipment — fostering long-term relationships built on trust, professionalism, and excellence.
+    </p>
+  </div>
+</section>
+
+<!-- ✅ SECTION 2: Areas of Specialization -->
+<section id="specialization" class="bg-white">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <h2 class="fw-bold mb-3">Areas of <span class="text-orange">Specialization</span></h2>
+        <ul class="list-unstyled fs-6 mb-4">
+          <li>✔️ <strong>Material Testing Machines</strong> – for construction, manufacturing, and research industries.</li>
+          <li>✔️ <strong>Sand Testing Machines</strong> – ensuring accuracy and performance in foundry applications.</li>
+        </ul>
+        <p>
+          IEC operates a <strong>Site Calibration Laboratory (SCL)</strong>, managed under the CEO’s supervision,
+          ensuring compliance and accuracy. Staffed with skilled engineers, SCL guarantees high precision and
+          quality assurance.
+        </p>
+        <p>
+          Beyond calibration, IEC offers preventive maintenance, technical consultation, and complete
+          support for testing machines — positioning itself as a one-stop solution provider.
+        </p>
+      </div>
+
+      <div class="col-lg-6 text-center" data-aos="fade-left">
+        <img src="assets/images/about/about1.png" alt="Specialization Photo" class="img-fluid section-image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ SECTION 3: Quality Policy & Objectives -->
+<section id="quality" class="quality-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 text-center" data-aos="fade-right">
+        <img src="assets/images/about/about2.png" alt="Quality Photo" class="img-fluid section-image">
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-left">
+        <h2 class="fw-bold mb-4">Quality <span class="text-orange">Policy</span> & Objectives</h2>
+
+        <div class="quality-card mb-4">
+          <h5>Quality Policy</h5>
+          <p>
+            INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP (IEC) is committed to providing
+            high-quality calibration and equipment services, adhering to ISO/IEC 17025 standards.
+            We ensure integrity, transparency, and continuous improvement in all operations.
+          </p>
+        </div>
+
+        <div class="quality-card">
+          <h5>Quality Objectives</h5>
+          <ul class="list-unstyled mb-0">
+            <li>✔️ Continuous Improvement – adopt latest standards and technologies.</li>
+            <li>✔️ Professional Development – train and upskill staff regularly.</li>
+            <li>✔️ Customer Satisfaction – maintain ≥95% satisfaction rate.</li>
+            <li>✔️ Quality Assurance – ensure consistency via robust checks.</li>
+            <li>✔️ Customer Complaints – keep below 5% through proactive action.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ✅ FOOTER SECTION -->
+
+<footer class="footer-section pt-5 pb-4 text-light">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- 🔹 1. Company Info -->
+      <div class="col-lg-4 col-md-6">
+        <img src="assets/images/logo.png" alt="Indtek Logo" class="mb-3" width="160">
+        <p class="text-white-50">
+          INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP (IEC) — Delivering reliable, precise, and innovative testing
+          equipment and calibration solutions since 2013.
+        </p>
+      </div>
+
+      <!-- 🔹 2. Quick Links -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold text-orange mb-3">Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- 🔹 3. Contact Info -->
+      <div class="col-lg-5 col-md-12">
+        <h5 class="fw-bold text-orange mb-3">Contact Us</h5>
+        <ul class="list-unstyled text-white-50 mb-3">
+          <li><i class="fas fa-map-marker-alt me-2 text-orange"></i> No.19, SF No: 476/4, Lakshmi Garden 3A, Balaji Industrial Estate, Keeranatham, Coimbatore - 641035</li>
+          <li><i class="fas fa-phone me-2 text-orange"></i> +91 902 5858 360 / +91 99 5250 2221</li>
+          <li><i class="fas fa-envelope me-2 text-orange"></i> admin@indtek.co.in</li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="social-links">
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="mt-5 mb-3 text-white-50">
+
+    <!-- Copyright -->
+    <div class="text-center small text-white-50">
+      © <span id="year"></span> INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP. All Rights Reserved.
+    </div>
+  </div>
+
+  <!-- 🡅 Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+</footer>
+
+
+<!-- ✅ Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    easing: 'ease-in-out'
+  });
+</script>
+
+
+</body>
+</html>

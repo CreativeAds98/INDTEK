@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indtek</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+    <!-- ✅ Font Awesome (latest, for all icons) -->
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+
+    <!-- ✅ HEADER + NAVIGATION -->
+<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+  <div class="container">
+    <!-- Company Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="assets/images/logo.png" alt="Indtek Logo" class="me-2">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+        <!-- ✅ Dropdown Menu for Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="sales.html">Sales</a></li>
+            <li><a class="dropdown-item" href="services.html">Services</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+    <!-- ✅Hero Section -->
+<section id="hero" class="hero-section d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- ✅ LEFT CONTENT -->
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+        <h5 class="text-uppercase fw-semibold text-orange mb-3">
+          Trustable Industrial Solutions
+        </h5>
+        <h1 class="display-5 fw-bold text-white mb-3">
+          Where <span class="text-orange">Innovation</span> Drives Industrial Perfection
+        </h1>
+        <p class="text-light mb-4">
+          At Indtek, we provide world-class sales and service solutions with cutting-edge
+          technology and decades of experience — building excellence with trust and precision.
+        </p>
+        <a href="#contact" class="btn btn-primary me-3">Get a Quote</a>
+        <a href="#about" class="btn btn-outline-light">Learn More</a>
+      </div>
+
+      <!-- ✅ RIGHT IMAGE SLIDER -->
+      <div class="col-lg-6 col-md-12 position-relative hero-image-wrapper">
+        <img src="assets/images/home-slider/hero-slider-1.png" class="hero-image active" alt="Product 1">
+        <img src="assets/images/home-slider/hero-slider-2.png" class="hero-image" alt="Product 2">
+        <img src="assets/images/home-slider/hero-slider-3.png" class="hero-image" alt="Product 3">
+        <img src="assets/images/home-slider/hero-slider-4.png" class="hero-image" alt="Product 4">
+        <img src="assets/images/home-slider/hero-slider-5.png" class="hero-image" alt="Product 5">
+        <img src="assets/images/home-slider/hero-slider-6.png" class="hero-image" alt="Product 6">
+        <img src="assets/images/home-slider/hero-slider-7.png" class="hero-image" alt="Product 7">
+        <img src="assets/images/home-slider/hero-slider-8.png" class="hero-image" alt="Product 8">
+        <img src="assets/images/home-slider/hero-slider-9.png" class="hero-image" alt="Product 9">
+        <img src="assets/images/home-slider/hero-slider-10.png" class="hero-image" alt="Product 10">
+        <img src="assets/images/home-slider/hero-slider-11.png" class="hero-image" alt="Product 11">
+        <img src="assets/images/home-slider/hero-slider-12.png" class="hero-image" alt="Product 12">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ✅ ABOUT SECTION -->
+<section id="about" class="about-section py-5">
+  <div class="container">
+
+    <!-- 🔹 ROW 1: IMAGE LEFT + CONTENT RIGHT -->
+    <div class="row align-items-center mb-5">
+      <!-- Left Image -->
+      <div class="col-lg-6 mb-4 mb-lg-0 position-relative">
+        <img src="assets/images/about.png" alt="About Indtek" class="img-fluid rounded-4 shadow-lg about-img">
+        <div class="about-badge">
+          <h4 class="mb-0">Since 2013</h4>
+          <p class="mb-0 small">Serving Industries with Precision</p>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="col-lg-6">
+        <h5 class="text-orange text-uppercase fw-semibold mb-2">About Us</h5>
+        <h2 class="fw-bold text-dark mb-3">
+          INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP (IEC)
+        </h2>
+        <p class="text-muted mb-4">
+          INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP (IEC) was established in 2013,
+          initially under the name <strong>Indian Technologies</strong>. With a vision to expand and
+          streamline its operations in the field of testing equipment and calibration services, the company
+          was later restructured and renamed as INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP.
+        </p>
+        <p class="text-muted mb-4">
+          Over the years, IEC has built a strong reputation for delivering reliable, accurate, and professional
+          services in the domain of <strong>material testing</strong> and <strong>sand testing equipment</strong>.
+          IEC specializes in delivering quality services in two key areas:
+        </p>
+        <ul class="list-unstyled mb-0">
+          <li>✔️ <strong>Material Testing Machines –</strong> serving construction, manufacturing, and research industries.</li>
+          <li>✔️ <strong>Sand Testing Machines –</strong> ensuring accuracy and performance in foundry and related applications.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 🔹 ROW 2: VISION & MISSION SIDE BY SIDE -->
+    <div class="row text-center text-lg-start mb-5">
+      <!-- Vision -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h5 class="text-orange text-uppercase fw-semibold mb-3">Vision</h5>
+        <p class="text-muted fst-italic">
+          “To be the most trusted and innovative provider of testing equipment, calibration, and technical
+          services in India and beyond — setting the benchmark for quality, precision, and customer satisfaction.”
+        </p>
+      </div>
+
+      <!-- Mission -->
+      <div class="col-lg-6">
+        <h5 class="text-orange text-uppercase fw-semibold mb-3">Mission</h5>
+        <p class="text-muted fst-italic">
+          “Our mission is to deliver high-quality testing equipment and reliable on-site calibration services
+          through skilled professionals, advanced technology, and a customer-focused approach. We strive to ensure
+          accuracy, enhance operational efficiency, and build lasting partnerships with every client we serve.”
+        </p>
+      </div>
+    </div>
+
+    <!-- 🔹 ROW 3: CENTERED BUTTONS -->
+    <div class="text-center">
+      <a href="about.html" class="btn btn-primary me-3">Know More</a>
+      <a href="contact.html" class="btn btn-outline-dark">Contact Us</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ✅ SERVICES + EVENTS SECTION -->
+<section id="services" class="services-section py-5">
+  <div class="container">
+    <div class="row align-items-start">
+      
+      <!-- 🔹 LEFT: 4 SERVICE HIGHLIGHT CARDS -->
+      <div class="col-lg-8">
+        <h3 class="text-orange text-uppercase fw-semibold mb-2 text-center">What Makes Us Different</h5>
+        <h2 class="fw-bold text-dark mb-4 text-center">Our Key Strengths</h2>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6">
+            <div class="service-card p-4 shadow-sm h-100">
+              <div class="icon-wrapper mb-3"><i class="fas fa-user-check"></i></div>
+              <h5 class="fw-bold text-dark mb-2">Customer Focused</h5>
+              <p class="text-muted mb-0">Your requirements are our top priority.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6">
+            <div class="service-card p-4 shadow-sm h-100">
+              <div class="icon-wrapper mb-3"><i class="fas fa-microscope"></i></div>
+              <h5 class="fw-bold text-dark mb-2">Precision & Innovation</h5>
+              <p class="text-muted mb-0">Accurate calibration backed by modern technology.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6">
+            <div class="service-card p-4 shadow-sm h-100">
+              <div class="icon-wrapper mb-3"><i class="fas fa-tags"></i></div>
+              <h5 class="fw-bold text-dark mb-2">Competitive Pricing</h5>
+              <p class="text-muted mb-0">Value-driven solutions without compromising quality.</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6">
+            <div class="service-card p-4 shadow-sm h-100">
+              <div class="icon-wrapper mb-3"><i class="fas fa-shield-alt"></i></div>
+              <h5 class="fw-bold text-dark mb-2">Equipment Protection</h5>
+              <p class="text-muted mb-0">Utmost care for your machinery and instruments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🔹 RIGHT: UPCOMING EVENTS SCROLLER -->
+      <div class="col-lg-4 mt-5 mt-lg-0">
+        <div class="events-card p-4 shadow-lg rounded-4">
+          <h5 class="fw-bold text-white mb-3 text-center">🎯 Upcoming Events</h5>
+          <div class="events-scroll">
+            <ul class="list-unstyled mb-0">
+              <li>1️⃣ Indtek Technical Workshop - <span>November 2025</span></li>
+              <li>2️⃣ Calibration Standards Symposium - <span>December 2025</span></li>
+              <li>3️⃣ Foundry & Testing Expo - <span>January 2026</span></li>
+              <li>4️⃣ Material Testing Conference - <span>February 2026</span></li>
+              <li>5️⃣ Annual Client Appreciation Event - <span>March 2026</span></li>
+              <li>6️⃣ NABL Accreditation Seminar - <span>April 2026</span></li>
+              <li>7️⃣ New Product Launch - <span>May 2026</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ✅ OUR TEAM SECTION -->
+<section id="team" class="team-section py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h5 class="text-orange text-uppercase fw-semibold mb-2">Our Team</h5>
+      <h2 class="fw-bold text-dark mb-3">People Behind Our Success</h2>
+      <p class="text-muted mx-auto" style="max-width:700px;">
+        Meet the teams that drive Indtek forward — from client-focused sales experts to service engineers who ensure
+        precision, reliability, and performance in every project.
+      </p>
+    </div>
+
+    <div class="row g-4 align-items-stretch">
+      <!-- 🔹 SALES TEAM CARD -->
+      <div class="col-lg-6">
+        <div class="team-card p-5 shadow-sm h-100">
+          <div class="team-icon mb-3">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h4 class="fw-bold text-dark mb-3">Sales Team</h4>
+          <p class="text-muted">
+            A strong, experienced sales team with a deep understanding of engineering and testing requirements,
+            providing excellent customer support across the southern region.
+          </p>
+        </div>
+      </div>
+
+      <!-- 🔹 SERVICE TEAM CARD -->
+      <div class="col-lg-6">
+        <div class="team-card p-5 shadow-sm h-100">
+          <div class="team-icon mb-3">
+            <i class="fas fa-user-cog"></i>
+          </div>
+          <h4 class="fw-bold text-dark mb-3">Service Team</h4>
+          <p class="text-muted">
+            Highly trained engineers with manufacturer and field experience. We ensure fast, reliable after-sales
+            service and maintain the quality and performance of our equipment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ✅ OUR ACHIEVEMENTS SECTION -->
+<section id="achievements" class="achievements-section">
+  <div class="motion-bg"></div>
+
+  <div class="container text-center">
+    <h5 class="text-orange text-uppercase fw-semibold mb-2" data-aos="fade-down">Our Achievements</h5>
+    <h2 class="fw-bold text-light mb-5" data-aos="fade-up">
+      Projects Completed & Clients <span class="text-orange">Satisfied</span>
+    </h2>
+
+    <div class="row g-5 justify-content-center">
+
+      <!-- Counter 1 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="counter-box">
+          <i class="fas fa-clipboard-check"></i>
+          <h3><span class="counter" data-target="1200">0</span>+</h3>
+          <p>Projects Completed</p>
+        </div>
+      </div>
+
+      <!-- Counter 2 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="counter-box">
+          <i class="fas fa-users"></i>
+          <h3><span class="counter" data-target="800">0</span>+</h3>
+          <p>Satisfied Clients</p>
+        </div>
+      </div>
+
+      <!-- Counter 3 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="counter-box">
+          <i class="fas fa-globe"></i>
+          <h3><span class="counter" data-target="25">0</span>+</h3>
+          <p>States Covered</p>
+        </div>
+      </div>
+
+      <!-- Counter 4 -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="counter-box">
+          <i class="fas fa-calendar-check"></i>
+          <h3><span class="counter" data-target="12">0</span>+</h3>
+          <p>Years of Experience</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ✅ OUR TRUSTED MANUFACTURERS SECTION -->
+<section id="manufacturers" class="manufacturers-section py-5">
+  <div class="container text-center">
+    <h5 class="text-orange text-uppercase fw-semibold mb-2">Our Trusted Manufacturers</h5>
+    <h2 class="fw-bold text-dark mb-4">Partners in Precision & Quality</h2>
+    <p class="text-muted mb-5 mx-auto" style="max-width:700px;">
+      We proudly collaborate with leading global manufacturers who share our commitment to quality,
+      innovation, and excellence in industrial solutions.
+    </p>
+
+    <!-- 🔹 LOGO CAROUSEL -->
+    <div class="logo-slider">
+      <div class="logo-slide-track">
+        <!-- Duplicate logos for infinite effect -->
+        <div class="logo-slide"><img src="assets/images/manufacture-logo/manufacture-logo1.png" alt="Logo 1"></div>
+        <div class="logo-slide"><img src="assets/images/manufacture-logo/manufacture-logo2.png" alt="Logo 2"></div>
+        <div class="logo-slide"><img src="assets/images/manufacture-logo/manufacture-logo3.png" alt="Logo 3"></div>
+        <div class="logo-slide"><img src="assets/images/manufacture-logo/manufacture-logo4.png" alt="Logo 4"></div>
+        <div class="logo-slide"><img src="assets/images/manufacture-logo/manufacture-logo5.png" alt="Logo 5"></div>
+        <div class="logo-slide"><img src="assets/images/manufacture-logo/manufacture-logo6.png" alt="Logo 6"></div>
+        <!-- Repeat for infinite scroll -->
+        <div class="logo-slide"><img src="assets/images/manufacture-logo/manufacture-logo1.png" alt="Logo 1"></div>
+        <div class="logo-slide"><img src="assets/images/manufacture-logo/manufacture-logo2.png" alt="Logo 2"></div>
+        <div class="logo-slide"><img src="assets/images/manufacture-logo/manufacture-logo3.png" alt="Logo 3"></div>
+        <div class="logo-slide"><img src="assets/images/manufacture-logo/manufacture-logo4.png" alt="Logo 4"></div>
+        <div class="logo-slide"><img src="assets/images/manufacture-logo/manufacture-logo5.png" alt="Logo 5"></div>
+        <div class="logo-slide"><img src="assets/images/manufacture-logo/manufacture-logo6.png" alt="Logo 6"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ✅ CLIENT TESTIMONIALS SECTION -->
+<section id="testimonials" class="testimonials-section py-5">
+  <div class="container text-center">
+    <h5 class="text-orange text-uppercase fw-semibold mb-2">Client Testimonials</h5>
+    <h2 class="fw-bold text-dark mb-4">What Our Clients Say</h2>
+    <p class="text-muted mb-5 mx-auto" style="max-width:700px;">
+      Hear from our valued clients who trust Indtek for precision, quality, and reliability in every project we deliver.
+    </p>
+
+    <!-- 🔹 Testimonial Carousel -->
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Testimonial 1 -->
+        <div class="carousel-item active">
+          <div class="testimonial-card p-4 mx-auto shadow-sm">
+            <img src="assets/images/testimonials/client-1.jpg " alt="Client 1" class="testimonial-img mb-3">
+            <h5 class="fw-bold text-dark mb-1">Priya Narayanan</h5>
+            <p class="text-orange mb-2">ABC Manufacturing Pvt. Ltd.</p>
+            <div class="stars mb-3">
+              ★★★★★
+            </div>
+            <p class="text-muted fst-italic">
+              “Indtek’s calibration services are outstanding. The team’s attention to detail and responsiveness have made them
+              our preferred partner for equipment maintenance and accuracy verification.”
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="carousel-item">
+          <div class="testimonial-card p-4 mx-auto shadow-sm">
+            <img src="assets/images/testimonials/client-2.jpg" alt="Client 2" class="testimonial-img mb-3">
+            <h5 class="fw-bold text-dark mb-1">Ravi Kumar</h5>
+            <p class="text-orange mb-2">Foundry Tech Solutions</p>
+            <div class="stars mb-3">
+              ★★★★★
+            </div>
+            <p class="text-muted fst-italic">
+              “Their sand testing machines are top-notch. Indtek has been a great partner, providing reliable equipment and
+              timely after-sales service that keeps our operations running smoothly.”
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="carousel-item">
+          <div class="testimonial-card p-4 mx-auto shadow-sm">
+            <img src="assets/images/testimonials/client-3.jpg" alt="Client 3" class="testimonial-img mb-3">
+            <h5 class="fw-bold text-dark mb-1">Sona Balan</h5>
+            <p class="text-orange mb-2">Precision Labs India</p>
+            <div class="stars mb-3">
+              ★★★★☆
+            </div>
+            <p class="text-muted fst-italic">
+              “Professional, precise, and always dependable. The Indtek team’s expertise in calibration and testing services
+              adds true value to our laboratory operations.”
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ✅ YOUTUBE VIDEO GALLERY SECTION -->
+<section id="video-gallery" class="video-gallery-section py-5">
+  <div class="container text-center">
+    <h5 class="text-orange text-uppercase fw-semibold mb-2" data-aos="fade-down">Our Work in Motion</h5>
+    <h2 class="fw-bold text-danger mb-5" data-aos="fade-up">
+      Watch Our <span class="text-orange">Video Highlights</span>
+    </h2>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Video 1 -->
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+        <div class="video-card">
+          <div class="video-thumb">
+            <iframe src="https://www.youtube.com/embed/JcLhlt3gemY?si=ii-cx8XjB-uCGbzl" 
+              title="Indtek Video 1" allowfullscreen></iframe>
+          </div>
+          <h5 class="mt-3 text-white">Precision Calibration Demo</h5>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="video-card">
+          <div class="video-thumb">
+            <iframe src="https://www.youtube.com/embed/JcLhlt3gemY?si=ii-cx8XjB-uCGbzl" 
+              title="Indtek Video 2" allowfullscreen></iframe>
+          </div>
+          <h5 class="mt-3 text-white">Material Testing Process</h5>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="video-card">
+          <div class="video-thumb">
+            <iframe src="https://www.youtube.com/embed/JcLhlt3gemY?si=ii-cx8XjB-uCGbzl" 
+              title="Indtek Video 3" allowfullscreen></iframe>
+          </div>
+          <h5 class="mt-3 text-white">Client Equipment Installation</h5>
+        </div>
+      </div>
+
+      <!-- Add more videos as needed -->
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- ✅ Floating Mail Button -->
+<div class="floating-mail" id="mailIcon" title="Contact Us">
+  <i class="fas fa-envelope"></i>
+</div>
+
+<!-- ✅ Floating Contact Form -->
+<div class="mail-form" id="mailForm">
+  <form>
+    <h5>Contact Us</h5>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="Number" required>
+    <input type="text" placeholder="Mission" required>
+    <textarea placeholder="Message" rows="3" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+
+<!-- ✅ FOOTER SECTION -->
+
+<footer class="footer-section pt-5 pb-4 text-light">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- 🔹 1. Company Info -->
+      <div class="col-lg-4 col-md-6">
+        <img src="assets/images/logo.png" alt="Indtek Logo" class="mb-3" width="160">
+        <p class="text-white-50">
+          INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP (IEC) — Delivering reliable, precise, and innovative testing
+          equipment and calibration solutions since 2013.
+        </p>
+      </div>
+
+      <!-- 🔹 2. Quick Links -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold text-orange mb-3">Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- 🔹 3. Contact Info -->
+      <div class="col-lg-5 col-md-12">
+        <h5 class="fw-bold text-orange mb-3">Contact Us</h5>
+        <ul class="list-unstyled text-white-50 mb-3">
+          <li><i class="fas fa-map-marker-alt me-2 text-orange"></i> No.19, SF No: 476/4, Lakshmi Garden 3A, Balaji Industrial Estate, Keeranatham, Coimbatore - 641035</li>
+          <li><i class="fas fa-phone me-2 text-orange"></i> +91 902 5858 360 / +91 99 5250 2221</li>
+          <li><i class="fas fa-envelope me-2 text-orange"></i> admin@indtek.co.in</li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="social-links">
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="mt-5 mb-3 text-white-50">
+
+    <!-- Copyright -->
+    <div class="text-center small text-white-50">
+      © <span id="year"></span> INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP. All Rights Reserved.
+    </div>
+  </div>
+
+  <!-- 🡅 Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+</footer>
+
+
+
+
+
+<!-- ✅ Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- ✅ Include Bootstrap JS for dropdowns -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script>
+const images = document.querySelectorAll('.hero-image');
+let current = 0;
+
+function rotateImages() {
+  images[current].classList.remove('active');
+  current = (current + 1) % images.length;
+  images[current].classList.add('active');
+}
+
+setInterval(rotateImages, 3000); // Every 3 seconds
+</script>
+
+
+<script>
+// Dynamic year in footer
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Scroll-to-top functionality
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+window.onscroll = function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+};
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
+
+
+
+<!-- ✅ SCRIPTS  For Achievment Section-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 1000,
+  once: true,
+  easing: 'ease-in-out'
+});
+
+// ✅ Counter Animation
+const counters = document.querySelectorAll('.counter');
+const speed = 150; // lower = faster
+
+const startCounting = (counter) => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+    const increment = target / speed;
+    if (count < target) {
+      counter.innerText = Math.ceil(count + increment);
+      setTimeout(updateCount, 30);
+    } else {
+      counter.innerText = target;
+    }
+  };
+  updateCount();
+};
+
+// Trigger on scroll into view
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      startCounting(entry.target);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.6 });
+
+counters.forEach(counter => observer.observe(counter));
+</script>
+
+<!-- ✅ SCRIPTS  For flaoting button-->
+<script>
+const mailIcon = document.getElementById('mailIcon');
+const mailForm = document.getElementById('mailForm');
+
+mailIcon.addEventListener('click', () => {
+  mailForm.classList.toggle('active');
+});
+</script>
+
+
+<!-- ✅ SCRIPTS  youtube-->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 1000,
+  once: true,
+  easing: 'ease-in-out'
+});
+</script>
+
+</body>
+</html>
+
