@@ -17,119 +17,56 @@
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-.sales-unique-section {
-  background: #f8f9fb;
-}
 
-.text-orange { color: #ff6600; }
-
-/* Main Panel Layout */
-.sales-panel {
-  position: relative;
-  padding: 40px 25px;
-  border-radius: 16px;
+.sand-card {
   background: #fff;
-  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 15px;
   text-align: center;
-  transition: all 0.5s ease;
-  overflow: hidden;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  transform: translateY(20px) scale(0.9);
+  opacity: 0;
 }
 
-/* Gradient Panel Backgrounds */
-.material-panel::before,
-.sand-panel::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  opacity: 0.15;
-  transition: 0.5s;
+.sand-card.show {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.material-panel::before {
-  background: linear-gradient(135deg, #0066ff, #00ccff);
+.sand-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(255,102,0,0.25);
 }
 
-.sand-panel::before {
-  background: linear-gradient(135deg, #ff6600, #ff9933);
-}
-
-/* Panel Hover Effects */
-.sales-panel:hover {
-  transform: translateY(-12px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
-}
-
-.sales-panel:hover::before {
-  opacity: 0.25;
-}
-
-/* Image style */
-.panel-image {
+.sand-card img {
   width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 1;
+  height: 130px;
+  object-fit: contain;
+  margin-bottom: 8px;
 }
 
-.panel-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.5s ease;
-}
-
-/* Image Zoom on Hover */
-.sales-panel:hover .panel-image img {
-  transform: scale(1.07);
-}
-
-/* Headings */
-.sales-panel h3 {
-  font-size: 1.7rem;
+.sand-card h5 {
+  font-size: 0.9rem;
   font-weight: 700;
   color: #002b5b;
-  margin-bottom: 12px;
-  z-index: 2;
-  position: relative;
 }
-
-/* Paragraph text */
-.sales-panel p {
-  color: #555;
-  font-size: 0.95rem;
-  margin-bottom: 20px;
-  z-index: 2;
-}
-
-/* Button */
-.panel-btn {
-  position: relative;
-  z-index: 3;
-  background: #ff6600;
-  color: #fff;
-  padding: 10px 22px;
-  border-radius: 25px;
+.product-link {
   text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
+  color: inherit;
+  display: block;
 }
 
-.panel-btn:hover {
-  background: #e05500;
-}
 
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .panel-image {
-    height: 180px;
+/* Force EXACT 5 cards in a row on large screens */
+@media (min-width: 1200px) {
+  .col-lg-2 {
+    flex: 0 0 20%;
+    max-width: 20%;
   }
 }
-
-
 
 
 </style>
@@ -178,52 +115,122 @@
   </div>
 </header>
 
-<section id="sales" class="sales-unique-section py-5">
+<section class="sand-section py-5">
   <div class="container text-center">
-    <h5 class="text-orange text-uppercase fw-bold mb-2">Sales Division</h5>
+    <h5 class="text-orange fw-semibold mb-2">Sand Testing Division</h5>
     <h2 class="fw-bold text-dark mb-5">
-      Our <span class="text-orange">Product Categories</span>
+      Our <span class="text-orange">Sand Testing Machines</span>
     </h2>
   </div>
 
   <div class="container">
-    <div class="row g-4">
+    <div class="row g-4 justify-content-center">
 
-      <!-- 🧱 MATERIAL TESTING - Slide from Left -->
-      <div class="col-lg-6" data-aos="fade-right">
-        <div class="sales-panel material-panel">
-          <div class="panel-image">
-            <img src="assets/images/Sales/Material-Testing-Machines.png" alt="Material Testing Machines">
+      <!-- 1 -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sand-item">
+        <a href="./Sand-Products/sand-rammer.html" class="product-link">
+          <div class="sand-card">
+            <img src="assets/images/Sales/images/Sand-Rammer.png" alt="">
+            <h5>Sand Rammer</h5>
           </div>
-
-          <h3>Material Testing Machines</h3>
-          <p>
-            Advanced material testing systems for construction, manufacturing and laboratories — engineered for accuracy.
-          </p>
-
-          <a href="#" class="panel-btn">Explore</a>
-        </div>
+        </a>
       </div>
 
-      <!-- 🏗️ SAND TESTING - Slide from Right -->
-      <div class="col-lg-6" data-aos="fade-left">
-        <div class="sales-panel sand-panel">
-          <div class="panel-image">
-            <img src="assets/images/Sales/Sand-Testing-Machines.png" alt="Sand Testing Machines">
+      <!-- 2 -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sand-item">
+        <a href="./Sand-Products/universal-strength-machine.html" class="product-link">
+          <div class="sand-card">
+            <img src="assets/images/Sales/images/Universal-Strength-Machine.png" alt="">
+            <h5>Universal Strength Machine</h5>
           </div>
+        </a>
+      </div>
 
-          <h3>Sand Testing Machines</h3>
-          <p>
-            Reliable sand testing systems for foundries — designed for consistency, durability and high precision.
-          </p>
+      <!-- 3 -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sand-item">
+        <a href="./Sand-Products/permeability-meter.html" class="product-link">
+          <div class="sand-card">
+            <img src="assets/images/Sales/images/Permeability-Meter.png" alt="">
+            <h5>Permeability Meter</h5>
+          </div>
+        </a>
+      </div>
 
-          <a href="sand-testing.html" class="panel-btn">Explore</a>
-        </div>
+      <!-- 4 -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sand-item">
+        <a href="./Sand-Products/wet-tensile-tester.html" class="product-link">
+          <div class="sand-card">
+            <img src="assets/images/Sales/images/Wet-Tensile-Tester.png" alt="">
+            <h5>Wet Tensile Tester</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sand-item">
+        <a href="./Sand-Products/sieve-shaker.html" class="product-link">
+          <div class="sand-card">
+            <img src="assets/images/Sales/images/Sieve-Shaker.png" alt="">
+            <h5>Sieve Shaker</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sand-item">
+        <a href="./Sand-Products/core-gas-determinator.html" class="product-link">
+          <div class="sand-card">
+            <img src="assets/images/Sales/images/Core-Gas-determinator.png" alt="">
+            <h5>Core Gas Determinator</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sand-item">
+        <a href="./Sand-Products/clay-washer.html" class="product-link">
+          <div class="sand-card">
+            <img src="assets/images/Sales/images/Clay-Washer.png" alt="">
+            <h5>Clay Washer</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- 8 -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sand-item">
+        <a href="./Sand-Products/sand-muller.html" class="product-link">
+          <div class="sand-card">
+            <img src="assets/images/Sales/images/Sand-Muller.png" alt="">
+            <h5>Sand Muller</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- 9 -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sand-item">
+        <a href="./Sand-Products/sand-mixture.html" class="product-link">
+          <div class="sand-card">
+            <img src="assets/images/Sales/images/Sand-Mixture.png" alt="">
+            <h5>Sand Mixture</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- 10 -->
+      <div class="col-lg-2 col-md-4 col-sm-6 sand-item">
+        <a href="./Sand-Products/hot-shell-tensile-tester.html" class="product-link">
+          <div class="sand-card">
+            <img src="assets/images/Sales/images/Hot-Shell-Tensile-Tester.png" alt="">
+            <h5>Hot Shell Tensile Tester</h5>
+          </div>
+        </a>
       </div>
 
     </div>
   </div>
 </section>
+
+
 
 
 <!-- ✅ FOOTER SECTION -->
@@ -292,10 +299,31 @@
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
 AOS.init({
-  duration: 1800,
-  once: true,
-  easing: 'ease-in-out',
+  duration: 900,
+  easing: 'ease-out-cubic',
+  delay: 50,
+  once: true
 });
 </script>
+<script>
+const cards = document.querySelectorAll('.sand-card');
+let delay = 0;
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      setTimeout(() => {
+        entry.target.classList.add('show');
+      }, delay);
+      delay += 60; 
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+cards.forEach(card => observer.observe(card));
+</script>
+
+
 </body>
 </html>

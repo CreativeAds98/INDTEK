@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indtek | Wet Tensile Tester</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+
+  <!-- ✅ AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+      <!-- ✅ Font Awesome (latest, for all icons) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- ✅ Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+      
+      
+    <style>
+
+
+
+/* 3D PRODUCT IMAGE */
+.product-img-3d{
+  width:55%;
+  max-width:420px;
+  display:block;
+  margin:auto;
+  transition:0.4s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  cursor: pointer;
+
+  /* BEAUTIFUL DEPTH SHADOW */
+  filter: drop-shadow(0 20px 35px rgba(0,0,0,0.28));
+}
+
+/* HOVER LIFT EFFECT */
+.product-img-3d:hover{
+  transform: translateY(-12px) scale(1.05) rotateX(4deg) rotateY(-4deg);
+  filter: drop-shadow(0 35px 55px rgba(0,0,0,0.35));
+}
+
+/* OPTIONAL: Glow while hovering */
+.product-img-3d:hover{
+  box-shadow:
+    0 0 25px rgba(255, 102, 0, 0.35),
+    0 0 40px rgba(255, 102, 0, 0.25);
+}
+
+.product-title{
+  font-size:2rem;
+  font-weight:700;
+  color:#002b5b;
+}
+
+.block-heading{
+  font-size:1.3rem;
+  font-weight:700;
+  color:#ff6600;
+  margin-bottom:10px;
+}
+
+.text-justify{
+  text-align:justify;
+  color:#333;
+  line-height:1.6;
+}
+
+.custom-list li{
+  text-align:justify;
+  margin-bottom:8px;
+  line-height:1.6;
+}
+
+.spec-table td{
+  padding:8px;
+  border-bottom:1px solid #ddd;
+  font-size:0.95rem;
+}
+
+
+  </style>
+</head>
+<body>
+
+    
+    <!-- ✅ HEADER + NAVIGATION -->
+<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+  <div class="container">
+    <!-- Company Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="../index.html">
+      <img src="../assets/images/logo.png" alt="Indtek Logo"  class="me-2">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+
+        <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+
+        <!-- ✅ Dropdown Menu for Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="../sales.html">Sales</a></li>
+            <li><a class="dropdown-item" href="../services.html">Services</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="../blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+  </div>
+</header>
+
+<!-- PRODUCT SECTION -->
+
+<!-- PRODUCT SECTION -->
+<section class="product-section container py-5">
+
+  <!-- CENTERED 3D IMAGE -->
+  <div class="text-center mb-4">
+    <img src="../assets/images/Sales/images/Wet-Tensile-Tester.png" class="product-img-3d" alt="Wet Tensile Tester">
+  </div>
+
+  <!-- TITLE -->
+  <h2 class="product-title text-center mb-5">Wet Tensile Tester</h2>
+
+  <div class="row g-4">
+
+    <!-- LEFT COLUMN -->
+    <div class="col-lg-6">
+
+      <h3 class="block-heading">Mechanism</h3>
+      <p class="text-justify">
+        The equipment consists of a loading frame, loading mechanism, force measuring mechanism,
+        and a controlled heater designed to heat specimens up to <strong>300°C</strong>. It includes a facility
+        to accommodate a special specimen tube.
+      </p>
+      <p class="text-justify">
+        A digital strength indicator is provided to measure wet tensile strength up to 
+        <strong>60 g/cm²</strong> along with a built-in temperature indicator.
+      </p>
+      <p class="text-justify">
+        Default supply requirements: <strong>230V AC, 50Hz</strong>.  
+        Requires <strong>6 Kg/cm² pneumatic air supply</strong>.
+      </p>
+
+      <h3 class="block-heading">Misc. Specifications</h3>
+      <ul class="custom-list">
+        <li>Fully automatic testing cycle for wet tensile strength determination.</li>
+        <li>Optional computer interfacing with customized software for data acquisition, analysis & plotting.</li>
+        <li>Selectable units: <strong>g/cm²</strong> or <strong>N/mm²</strong>.</li>
+      </ul>
+
+      <h3 class="block-heading">Sand Type</h3>
+      <p class="text-justify">Green Sand</p>
+
+      <h3 class="block-heading">Test</h3>
+      <p class="text-justify">Determines the wet tensile strength of foundry sand.</p>
+
+      <h3 class="block-heading">Application</h3>
+      <p class="text-justify">
+        When clay-bonded sand mould surfaces are strongly heated for a defined duration,
+        part of the water evaporates and recondenses in the cooler sand region, causing a 
+        significant drop in strength in that condensation zone.
+      </p>
+      <p class="text-justify">
+        The Wet Tensile Tester measures this tensile strength drop in the condensation zone, 
+        helping determine mould behavior under thermal load.
+      </p>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="col-lg-6">
+
+      <h3 class="block-heading">Range</h3>
+      <p class="text-justify">0 to <strong>60 g/cm²</strong></p>
+
+      <h3 class="block-heading">Precautions</h3>
+      <ul class="custom-list">
+        <li><strong>Burn Hazard:</strong> Heater temperature reaches up to 300°C.</li>
+        <li>Remove accumulated water from the FRL unit periodically.</li>
+      </ul>
+
+      <h3 class="block-heading">Maintenance</h3>
+      <p class="text-justify">
+        Clean the equipment after every use to ensure accurate readings and longer lifespan.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ✅ FOOTER SECTION -->
+
+<footer class="footer-section pt-5 pb-4 text-light">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- 🔹 1. Company Info -->
+      <div class="col-lg-4 col-md-6">
+        <img src="../assets/images/logo.png" alt="Indtek Logo" class="mb-3" width="160">
+        <p class="text-white-50">
+          INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP (IEC) — Delivering reliable, precise, and innovative testing
+          equipment and calibration solutions since 2013.
+        </p>
+      </div>
+
+      <!-- 🔹 2. Quick Links -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold text-orange mb-3">Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- 🔹 3. Contact Info -->
+      <div class="col-lg-5 col-md-12">
+        <h5 class="fw-bold text-orange mb-3">Contact Us</h5>
+        <ul class="list-unstyled text-white-50 mb-3">
+          <li><i class="fas fa-map-marker-alt me-2 text-orange"></i> No.19, SF No: 476/4, Lakshmi Garden 3A, Balaji Industrial Estate, Keeranatham, Coimbatore - 641035</li>
+          <li><i class="fas fa-phone me-2 text-orange"></i> +91 902 5858 360 / +91 99 5250 2221</li>
+          <li><i class="fas fa-envelope me-2 text-orange"></i> admin@indtek.co.in</li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="social-links">
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com/@indtekequipmentsandcalibration?si=2FKyB5u2rUz1Zr_a" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="mt-5 mb-3 text-white-50">
+
+    <!-- Copyright -->
+    <div class="text-center small text-white-50">
+      © <span id="year"></span> INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP. All Rights Reserved.
+    </div>
+  </div>
+
+  <!-- 🡅 Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+</footer>
+
+
+<!-- ✅ Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// 3D Float Mouse Tilt
+const img3d = document.querySelector(".product-img-3d");
+
+img3d.addEventListener("mousemove", (e) => {
+  const rect = img3d.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
+  const rotateY = (x - rect.width / 2) / 25;
+  const rotateX = (rect.height / 2 - y) / 25;
+
+  img3d.style.transform =
+    `perspective(1000px) 
+    rotateX(${rotateX}deg) 
+    rotateY(${rotateY}deg) 
+    scale(1.07)`;
+});
+
+img3d.addEventListener("mouseleave", () => {
+  img3d.style.transform = 
+    "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)";
+});
+</script>
+
+
+
+</body>
+</html>

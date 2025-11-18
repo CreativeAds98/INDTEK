@@ -694,6 +694,7 @@
   color: #fff;
   margin-right: 8px;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 .social-links a:hover {
   background: #fff;
