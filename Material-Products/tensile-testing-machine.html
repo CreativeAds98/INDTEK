@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indtek | Tensile Testing Machine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+
+  <!-- ✅ AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+      <!-- ✅ Font Awesome (latest, for all icons) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- ✅ Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+      
+      
+    <style>
+
+
+/* Product Section Wrapper */
+.product-wrapper {
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 50px 35px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+  animation: fadeInUp .7s ease;
+}
+
+/* Highlight Bar */
+.section-title-bar {
+  width: 70px;
+  height: 5px;
+  background: #ff6600;
+  margin: 12px auto 25px auto;
+  border-radius: 8px;
+}
+
+/* Heading Style */
+.product-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #002b5b;
+  letter-spacing: 0.5px;
+}
+
+/* Sub section headings */
+.block-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ff6600;
+  margin: 18px 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.block-heading i {
+  color: #ff6600;
+}
+
+/* Text Styling */
+.text-justify {
+  color: #333;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Elegant List */
+.custom-list {
+  padding-left: 18px;
+}
+
+.custom-list li {
+  margin-bottom: 8px;
+  line-height: 1.55;
+  color: #444;
+}
+
+/* Spec Table */
+.spec-table {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.spec-table td {
+  padding: 10px 12px;
+  background: #fff;
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+.spec-table tr:nth-child(even) td {
+  background: #f3f6f9;
+}
+
+/* 3D Product Image */
+.product-img-3d {
+  width: 48%;
+  max-width: 450px;
+  transition: 0.45s ease;
+  filter: drop-shadow(0px 25px 35px rgba(0,0,0,0.20));
+  cursor: pointer;
+}
+
+.product-img-3d:hover {
+  transform: translateY(-10px) scale(1.05) rotateX(6deg) rotateY(-6deg);
+  filter: drop-shadow(0px 40px 55px rgba(0,0,0,0.35));
+}
+
+/* Layout Enhancements */
+.product-section {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .product-img-3d { width: 75%; }
+  .product-wrapper { padding: 30px 20px; }
+}
+
+
+  </style>
+</head>
+<body>
+
+    
+    <!-- ✅ HEADER + NAVIGATION -->
+<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+  <div class="container">
+    <!-- Company Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="../index.html">
+      <img src="../assets/images/logo.png" alt="Indtek Logo"  class="me-2">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+
+        <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+
+        <!-- ✅ Dropdown Menu for Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="../sales.html">Sales</a></li>
+            <li><a class="dropdown-item" href="../services.html">Services</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="../blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+  </div>
+</header>
+
+
+
+<!-- PRODUCT SECTION -->
+<section class="product-section container py-5">
+
+  <!-- Outer Wrapper -->
+  <div class="product-wrapper">
+
+    <!-- Centered 3D Image -->
+    <div class="text-center mb-4">
+      <img src="../assets/images/Sales/material-testing/tensile-testing-machine.jpg"
+           class="product-img-3d" 
+           alt="Tensile Testing Machine">
+    </div>
+
+    <!-- Title -->
+    <h2 class="product-title text-center">Tensile Testing Machine – M-Series</h2>
+    <div class="section-title-bar"></div>
+
+    <div class="row g-4 mt-4">
+
+      <!-- LEFT COLUMN -->
+      <div class="col-lg-6">
+
+        <!-- DESCRIPTION -->
+        <h3 class="block-heading"><i class="fas fa-info-circle"></i> Application</h3>
+        <p class="text-justify">
+          Tensile Testing Machines (M-Series) perform a wide variety of tests such as 
+          <strong>Tensile, Compression, Transverse, Peel Test, Shear, Bend</strong> and more.
+          Materials like rubber, plastics, ferrous & non-ferrous metals, fabrics, fibres, tapes, 
+          wires and adhesives can be tested in different standards.
+        </p>
+
+        <!-- SALIENT FEATURES -->
+        <h3 class="block-heading"><i class="fas fa-star"></i> Salient Features</h3>
+        <ul class="custom-list">
+          <li>Pre-calibrated ball screw loading system.</li>
+          <li>AC Servo motor drive with closed-loop crosshead control.</li>
+          <li>Computer-controlled machine with infinitely variable speed.</li>
+          <li>Overload & travel protection with limit switches.</li>
+          <li>User-friendly Windows-based software.</li>
+          <li>Batch testing, statistical graphs & group reports.</li>
+          <li>Elongation, strain & proof-stress evaluation.</li>
+          <li>Real-time graphical display – Load vs Extension / Stress vs Strain.</li>
+          <li>High accuracy ±1% as per IS-1828 & BS-1610.</li>
+          <li>Supports extensometer for precise strain measurement.</li>
+        </ul>
+
+        <!-- DESCRIPTION -->
+        <h3 class="block-heading"><i class="fas fa-file-alt"></i> Description</h3>
+        <p class="text-justify">
+          The M-Series Tensile Testing Machines are rugged, accurate and ideal for industrial and QC labs.
+          They include an AC Servo Motor for crosshead movement, precision load cells, high-accuracy encoder,
+          strong loading frame and advanced Windows software for report generation, comparison, scaling,
+          graphing and exporting.
+        </p>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col-lg-6">
+
+        <!-- TECHNICAL SPECIFICATIONS -->
+        <h3 class="block-heading"><i class="fas fa-cogs"></i> Technical Specifications</h3>
+        <table class="table spec-table">
+
+          <tr><td>Max Capacity (kN)</td>
+              <td>M1: 1 | M2: 2 | M5: 5 | M30: 30 | M50: 50 | M75: 75 | M100: 100</td></tr>
+
+          <tr><td>Crosshead Traverse (mm)</td><td>1000 mm (all models)</td></tr>
+
+          <tr><td>Max Working Width</td><td>400 mm (up to M30), 600 mm (M50 & above)</td></tr>
+
+          <tr><td>Dimensions (H × W × D)</td>
+              <td>
+                M1–M5: 1780×630×505 mm <br>
+                M30: 1920×675×750 mm <br>
+                M50–M100: 2640×1180×1500 mm
+              </td>
+          </tr>
+
+          <tr><td>Weight (Approx.)</td><td>150 kg – 500 kg depending on model</td></tr>
+
+          <tr><td>Crosshead Drive</td><td>AC Servo Motor with feedback</td></tr>
+
+          <tr><td>Speed Range</td><td>0.05 to 500 mm/min (programmable)</td></tr>
+
+          <tr><td>Accuracy</td><td>±1% as per IS 1828 / BS 1610</td></tr>
+
+          <tr><td>Load Resolution</td><td>1,00,000 counts (Up to 4,00,000 optional)</td></tr>
+
+          <tr><td>Crosshead Resolution</td><td>0.001 mm</td></tr>
+
+          <tr><td>Load Measurement</td><td>Precision Load Cell</td></tr>
+        </table>
+
+        <!-- STANDARD ACCESSORIES -->
+        <h3 class="block-heading"><i class="fas fa-box-open"></i> Standard Accessories</h3>
+        <ul class="custom-list">
+          <li>1 Load Cell (per selected capacity)</li>
+          <li>Pair of Compression Plates</li>
+          <li>Windows-based Testing Software</li>
+          <li>Base Machine with Safety Guards</li>
+        </ul>
+
+        <!-- OPTIONAL ACCESSORIES -->
+        <h3 class="block-heading"><i class="fas fa-plus-circle"></i> Optional Grips & Fixtures</h3>
+        <ul class="custom-list">
+          <li>Eccentric Roller Grips – 2 kN / 5 kN</li>
+          <li>Vice Type Grips – 1 kN to 30 kN</li>
+          <li>Bollard Type Rope Grip</li>
+          <li>Compression Cage (5 kN – 50 kN)</li>
+          <li>Dumbbell Moulded Specimen Grips</li>
+          <li>High-Elongation Extensometer (Up to 800 mm)</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ✅ FOOTER SECTION -->
+
+<footer class="footer-section pt-5 pb-4 text-light">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- 🔹 1. Company Info -->
+      <div class="col-lg-4 col-md-6">
+        <img src="../assets/images/logo.png" alt="Indtek Logo" class="mb-3" width="160">
+        <p class="text-white-50">
+          INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP (IEC) — Delivering reliable, precise, and innovative testing
+          equipment and calibration solutions since 2013.
+        </p>
+      </div>
+
+      <!-- 🔹 2. Quick Links -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold text-orange mb-3">Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- 🔹 3. Contact Info -->
+      <div class="col-lg-5 col-md-12">
+        <h5 class="fw-bold text-orange mb-3">Contact Us</h5>
+        <ul class="list-unstyled text-white-50 mb-3">
+          <li><i class="fas fa-map-marker-alt me-2 text-orange"></i> No.19, SF No: 476/4, Lakshmi Garden 3A, Balaji Industrial Estate, Keeranatham, Coimbatore - 641035</li>
+          <li><i class="fas fa-phone me-2 text-orange"></i> +91 902 5858 360 / +91 99 5250 2221</li>
+          <li><i class="fas fa-envelope me-2 text-orange"></i> admin@indtek.co.in</li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="social-links">
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com/@indtekequipmentsandcalibration?si=2FKyB5u2rUz1Zr_a" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="mt-5 mb-3 text-white-50">
+
+    <!-- Copyright -->
+    <div class="text-center small text-white-50">
+      © <span id="year"></span> INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP. All Rights Reserved.
+    </div>
+  </div>
+
+  <!-- 🡅 Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+</footer>
+
+
+<!-- ✅ Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// 3D Float Mouse Tilt
+const img3d = document.querySelector(".product-img-3d");
+
+img3d.addEventListener("mousemove", (e) => {
+  const rect = img3d.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
+  const rotateY = (x - rect.width / 2) / 25;
+  const rotateX = (rect.height / 2 - y) / 25;
+
+  img3d.style.transform =
+    `perspective(1000px) 
+    rotateX(${rotateX}deg) 
+    rotateY(${rotateY}deg) 
+    scale(1.07)`;
+});
+
+img3d.addEventListener("mouseleave", () => {
+  img3d.style.transform = 
+    "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)";
+});
+</script>
+
+
+
+</body>
+</html>

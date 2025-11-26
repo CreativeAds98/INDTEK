@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indtek | Digital Rockwell Hardness Tester</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+
+  <!-- ✅ AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+      <!-- ✅ Font Awesome (latest, for all icons) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- ✅ Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+      
+      
+    <style>
+
+
+
+/* Product Section Wrapper */
+.product-wrapper {
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 50px 35px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+  animation: fadeInUp .7s ease;
+}
+
+/* Highlight Bar */
+.section-title-bar {
+  width: 70px;
+  height: 5px;
+  background: #ff6600;
+  margin: 12px auto 25px auto;
+  border-radius: 8px;
+}
+
+/* Heading Style */
+.product-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #002b5b;
+  letter-spacing: 0.5px;
+}
+
+/* Sub section headings */
+.block-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ff6600;
+  margin: 18px 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.block-heading i {
+  color: #ff6600;
+}
+
+/* Text Styling */
+.text-justify {
+  color: #333;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Elegant List */
+.custom-list {
+  padding-left: 18px;
+}
+
+.custom-list li {
+  margin-bottom: 8px;
+  line-height: 1.55;
+  color: #444;
+}
+
+/* Spec Table */
+.spec-table {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.spec-table td {
+  padding: 10px 12px;
+  background: #fff;
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+.spec-table tr:nth-child(even) td {
+  background: #f3f6f9;
+}
+
+/* 3D Product Image */
+.product-img-3d {
+  width: 48%;
+  max-width: 450px;
+  transition: 0.45s ease;
+  filter: drop-shadow(0px 25px 35px rgba(0,0,0,0.20));
+  cursor: pointer;
+}
+
+.product-img-3d:hover {
+  transform: translateY(-10px) scale(1.05) rotateX(6deg) rotateY(-6deg);
+  filter: drop-shadow(0px 40px 55px rgba(0,0,0,0.35));
+}
+
+/* Layout Enhancements */
+.product-section {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .product-img-3d { width: 75%; }
+  .product-wrapper { padding: 30px 20px; }
+}
+
+
+  </style>
+</head>
+<body>
+
+    
+    <!-- ✅ HEADER + NAVIGATION -->
+<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+  <div class="container">
+    <!-- Company Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="../index.html">
+      <img src="../assets/images/logo.png" alt="Indtek Logo"  class="me-2">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+
+        <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+
+        <!-- ✅ Dropdown Menu for Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="../sales.html">Sales</a></li>
+            <li><a class="dropdown-item" href="../services.html">Services</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="../blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+  </div>
+</header>
+
+<!-- PRODUCT SECTION -->
+
+<section class="product-section container py-5">
+
+  <div class="product-wrapper">
+
+    <!-- IMAGE -->
+    <div class="text-center mb-4">
+      <img src="../assets/images/Sales/material-testing/rockwell-hardness-tester.png"
+           class="product-img-3d"
+           alt="Digital Rockwell Hardness Tester">
+    </div>
+
+    <!-- TITLE -->
+    <h2 class="product-title text-center">Digital Rockwell Hardness Tester</h2>
+    <div class="section-title-bar"></div>
+
+    <div class="row g-4 mt-4">
+
+      <!-- LEFT COLUMN -->
+      <div class="col-lg-6">
+
+        <h3 class="block-heading"><i class="fas fa-info-circle"></i> Salient Features</h3>
+        <ul class="custom-list">
+          <li>Screen touch & large display – Easy to read.</li>
+          <li>Motorized system for application & removal of major load.</li>
+          <li>Minor load setting using touch screen.</li>
+          <li>On-screen keypad for data entry.</li>
+          <li>High–OK–Low indication for hardness value.</li>
+          <li>RS-232 port for report generation & printing.</li>
+          <li>Error messages for smooth functioning.</li>
+          <li>Two modes: Automatic & Manual.</li>
+          <li>Standard software with Sr.No, Hardness values & Limits.</li>
+          <li>Indenter guided on linear bearings for small jobs.</li>
+          <li>Conversion tables available for selected scales.</li>
+          <li>Optional statistical analysis software.</li>
+          <li>Three different dwell times for material testing.</li>
+        </ul>
+
+        <h3 class="block-heading"><i class="fas fa-layer-group"></i> Available Models</h3>
+
+        <p><strong>Model : TRS-DS / DO</strong><br>
+          • Automatic weight selection (thumb wheel)<br>
+          • Loads 60, 100, 150 kgf
+        </p>
+
+        <p><strong>Model : TRB-DS / TRB-DO</strong><br>
+          • Includes Brinell load 187.5 kgf<br>
+          • Brinell Microscope 25X
+        </p>
+
+        <p><strong>Model : TRB-250-DS / DO</strong><br>
+          • Additional Brinell loads 187.5 & 250 kgf<br>
+          • Brinell Microscope 25X
+        </p>
+
+        <p><strong>Model : TSM-DS / DO</strong><br>
+          • Rockwell + Superficial<br>
+          • Loads: 15, 30, 45, 60, 100, 150 kgf
+        </p>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col-lg-6">
+
+        <h3 class="block-heading"><i class="fas fa-table"></i> Technical Specifications</h3>
+
+        <!-- TECHNICAL SPECIFICATIONS TABLE -->
+        <table class="table spec-table">
+
+          <tr><td><strong>Test Loads</strong></td>
+              <td>60, 100, 150 (Rockwell)<br>15, 30, 45 (Superficial)</td></tr>
+
+          <tr><td><strong>Initial Load</strong></td>
+              <td>10 kgf</td></tr>
+
+          <tr><td><strong>Max Test Height</strong></td>
+              <td>285 mm</td></tr>
+
+          <tr><td><strong>Depth of Throat</strong></td>
+              <td>133 mm</td></tr>
+
+          <tr><td><strong>Max Depth of Elevating Screw Below Base</strong></td>
+              <td>230 mm</td></tr>
+
+          <tr><td><strong>Overall Dimensions</strong></td>
+              <td>610 × 240 × 730 mm</td></tr>
+
+          <tr><td><strong>Net Weight</strong></td>
+              <td>100 – 115 kg</td></tr>
+
+          <tr><td><strong>Scales Displayed</strong></td>
+              <td>Rockwell A, B, C, D, E, F, G, K, H, M, P, R, S, V<br>
+                  Superficial Scales</td></tr>
+
+          <tr><td><strong>Least Count</strong></td>
+              <td>0.1 Rockwell<br>0.2 Superficial</td></tr>
+
+          <tr><td><strong>Dwell Time</strong></td>
+              <td>1 to 99 sec selectable</td></tr>
+
+          <tr><td><strong>Printer Interface</strong></td>
+              <td>RS-232 Port</td></tr>
+
+          <tr><td><strong>Power Supply</strong></td>
+              <td>230V, Single Phase, 50Hz</td></tr>
+
+        </table>
+
+        <h3 class="block-heading"><i class="fas fa-box-open"></i> Standard Accessories</h3>
+
+        <!-- STANDARD ACCESSORIES TABLE -->
+        <table class="table spec-table">
+
+          <tr><td><strong>Rockwell Diamond Indenter</strong></td><td>1 No</td></tr>
+          <tr><td><strong>Superficial Diamond Indenter</strong></td><td>1 No</td></tr>
+          <tr><td><strong>Testing Table Ø50 mm</strong></td><td>1 No</td></tr>
+          <tr><td><strong>V-Groove Table (Ø6–45 mm)</strong></td><td>1 No</td></tr>
+          <tr><td><strong>Ball Indenter 1/16"</strong></td><td>1 No</td></tr>
+          <tr><td><strong>Ball Indenter 2.5 mm</strong></td><td>1 No</td></tr>
+          <tr><td><strong>Ball Indenter 5 mm</strong></td><td>1 No</td></tr>
+          <tr><td><strong>Test Block HRC</strong></td><td>1 No</td></tr>
+          <tr><td><strong>Test Block HRB</strong></td><td>1 No</td></tr>
+          <tr><td><strong>Test Block Superficial</strong></td><td>1 No</td></tr>
+          <tr><td><strong>Allen Spanners</strong></td><td>5 Nos</td></tr>
+          <tr><td><strong>Clamping Device</strong></td><td>1 No</td></tr>
+          <tr><td><strong>Brinell Microscope 25X</strong></td><td>1 No</td></tr>
+          <tr><td><strong>PVC Cover</strong></td><td>1 No</td></tr>
+          <tr><td><strong>Instruction Manual</strong></td><td>1 Book</td></tr>
+
+        </table>
+
+      </div>
+
+    </div>
+
+
+    <!-- OPTIONAL ACCESSORIES IMAGE SECTION -->
+<div class="mt-5">
+
+  <h3 class="block-heading text-center">
+    <i class="fas fa-tools"></i> Optional Accessories for Hardness Testers
+  </h3>
+
+  <!-- Wrapper -->
+  <div class="product-wrapper mt-3">
+
+    <div class="text-center">
+      <img src="../assets/images/Sales/material-testing/hardness-tester-accessories.png"
+           alt="Optional Accessories for Hardness Testers"
+           class="product-img-3d"
+           style="max-width: 900px; width: 100%; margin: auto;">
+    </div>
+
+  </div>
+
+</div>
+
+  </div>
+</section>
+
+
+<!-- ✅ FOOTER SECTION -->
+
+<footer class="footer-section pt-5 pb-4 text-light">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- 🔹 1. Company Info -->
+      <div class="col-lg-4 col-md-6">
+        <img src="../assets/images/logo.png" alt="Indtek Logo" class="mb-3" width="160">
+        <p class="text-white-50">
+          INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP (IEC) — Delivering reliable, precise, and innovative testing
+          equipment and calibration solutions since 2013.
+        </p>
+      </div>
+
+      <!-- 🔹 2. Quick Links -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold text-orange mb-3">Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- 🔹 3. Contact Info -->
+      <div class="col-lg-5 col-md-12">
+        <h5 class="fw-bold text-orange mb-3">Contact Us</h5>
+        <ul class="list-unstyled text-white-50 mb-3">
+          <li><i class="fas fa-map-marker-alt me-2 text-orange"></i> No.19, SF No: 476/4, Lakshmi Garden 3A, Balaji Industrial Estate, Keeranatham, Coimbatore - 641035</li>
+          <li><i class="fas fa-phone me-2 text-orange"></i> +91 902 5858 360 / +91 99 5250 2221</li>
+          <li><i class="fas fa-envelope me-2 text-orange"></i> admin@indtek.co.in</li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="social-links">
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com/@indtekequipmentsandcalibration?si=2FKyB5u2rUz1Zr_a" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="mt-5 mb-3 text-white-50">
+
+    <!-- Copyright -->
+    <div class="text-center small text-white-50">
+      © <span id="year"></span> INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP. All Rights Reserved.
+    </div>
+  </div>
+
+  <!-- 🡅 Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+</footer>
+
+
+<!-- ✅ Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// 3D Float Mouse Tilt
+const img3d = document.querySelector(".product-img-3d");
+
+img3d.addEventListener("mousemove", (e) => {
+  const rect = img3d.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
+  const rotateY = (x - rect.width / 2) / 25;
+  const rotateX = (rect.height / 2 - y) / 25;
+
+  img3d.style.transform =
+    `perspective(1000px) 
+    rotateX(${rotateX}deg) 
+    rotateY(${rotateY}deg) 
+    scale(1.07)`;
+});
+
+img3d.addEventListener("mouseleave", () => {
+  img3d.style.transform = 
+    "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)";
+});
+</script>
+
+
+
+</body>
+</html>

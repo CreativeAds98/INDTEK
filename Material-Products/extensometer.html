@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indtek | Extensometer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+
+  <!-- ✅ AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+      <!-- ✅ Font Awesome (latest, for all icons) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- ✅ Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+      
+      
+    <style>
+
+
+/* Product Section Wrapper */
+.product-wrapper {
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 50px 35px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+  animation: fadeInUp .7s ease;
+}
+
+/* Highlight Bar */
+.section-title-bar {
+  width: 70px;
+  height: 5px;
+  background: #ff6600;
+  margin: 12px auto 25px auto;
+  border-radius: 8px;
+}
+
+/* Heading Style */
+.product-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #002b5b;
+  letter-spacing: 0.5px;
+}
+
+/* Sub section headings */
+.block-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ff6600;
+  margin: 18px 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.block-heading i {
+  color: #ff6600;
+}
+
+/* Text Styling */
+.text-justify {
+  color: #333;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Elegant List */
+.custom-list {
+  padding-left: 18px;
+}
+
+.custom-list li {
+  margin-bottom: 8px;
+  line-height: 1.55;
+  color: #444;
+}
+
+/* Spec Table */
+.spec-table {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.spec-table td {
+  padding: 10px 12px;
+  background: #fff;
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+.spec-table tr:nth-child(even) td {
+  background: #f3f6f9;
+}
+
+/* 3D Product Image */
+.product-img-3d {
+  width: 48%;
+  max-width: 450px;
+  transition: 0.45s ease;
+  filter: drop-shadow(0px 25px 35px rgba(0,0,0,0.20));
+  cursor: pointer;
+}
+
+.product-img-3d:hover {
+  transform: translateY(-10px) scale(1.05) rotateX(6deg) rotateY(-6deg);
+  filter: drop-shadow(0px 40px 55px rgba(0,0,0,0.35));
+}
+
+/* Layout Enhancements */
+.product-section {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .product-img-3d { width: 75%; }
+  .product-wrapper { padding: 30px 20px; }
+}
+
+
+  </style>
+</head>
+<body>
+
+    
+    <!-- ✅ HEADER + NAVIGATION -->
+<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+  <div class="container">
+    <!-- Company Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="../index.html">
+      <img src="../assets/images/logo.png" alt="Indtek Logo"  class="me-2">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+
+        <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+
+        <!-- ✅ Dropdown Menu for Services -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="../sales.html">Sales</a></li>
+            <li><a class="dropdown-item" href="../services.html">Services</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="../blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+  </div>
+</header>
+
+<!-- PRODUCT SECTION -->
+<section class="product-section container py-5">
+
+  <!-- Outer Wrapper -->
+  <div class="product-wrapper">
+
+    <!-- Centered 3D Image -->
+    <div class="text-center mb-4">
+      <img src="../assets/images/Sales/material-testing/extensometer.jpg" 
+           class="product-img-3d" 
+           alt="Electronic Extensometer FEE-5">
+    </div>
+
+    <!-- Title -->
+    <h2 class="product-title text-center">Electronic Extensometer – Model : FEE-5</h2>
+    <div class="section-title-bar"></div>
+
+    <div class="row g-4 mt-4">
+
+      <!-- LEFT COLUMN -->
+      <div class="col-lg-6">
+
+        <h3 class="block-heading"><i class="fas fa-info-circle"></i> Description</h3>
+        <p class="text-justify">
+          The Electronic Extensometer FEE-5 is designed for determination of 
+          <strong>proof stress</strong>, <strong>Young’s Modulus</strong> and 
+          <strong>strain values</strong> during tensile testing. 
+          It measures the correct strain values within the gauge length marks accurately.
+        </p>
+
+        <p class="text-justify">
+          For ductile materials, the stress–strain curve is well defined and the yield point appears clearly. 
+          For certain materials (high carbon steels, aluminium alloys, magnesium alloys), 
+          the straight portion of the curve gradually merges into the plastic region, making it difficult to determine 
+          the yield point manually. FEE-5 helps in obtaining accurate proof stress values.
+        </p>
+
+        <p class="text-justify">
+          FEE-5 meets all requirements of 
+          <strong>IS-12872:1990</strong>, <strong>ISO-9513:1989</strong>, and <strong>ASTM-E83 Class B2</strong>.  
+          It is suitable for all metals and ensures highly reliable and consistent measurements.
+        </p>
+
+        <h3 class="block-heading"><i class="fas fa-list"></i> Key Features</h3>
+        <ul class="custom-list">
+          <li>Accurate measurement of Young’s modulus & proof stress.</li>
+          <li>Suitable for determining 0.1% to 1.0% proof stress values.</li>
+          <li>Reliable operation even under elevated temperature conditions.</li>
+          <li>High mechanical stability with low-resistance strain gauge construction.</li>
+        </ul>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col-lg-6">
+
+        <h3 class="block-heading"><i class="fas fa-cogs"></i> Technical Specifications</h3>
+        <table class="table spec-table">
+          <tr><td><strong>Accuracy</strong></td><td>Class 1 as per IS 12872 / ISO 9513</td></tr>
+          <tr><td><strong>Type</strong></td><td>Strain Gauge Type</td></tr>
+          <tr><td><strong>Output</strong></td><td>0.3 mV / V / mm (Approx)</td></tr>
+          <tr><td><strong>Excitation</strong></td><td>10V DC Nominal</td></tr>
+          <tr><td><strong>Measuring Range</strong></td><td>5 mm</td></tr>
+          <tr><td><strong>Nominal Resistance</strong></td><td>350 Ohms</td></tr>
+          <tr><td><strong>Gauge Lengths</strong></td><td>25 mm & 50 mm (Fixed G.L.)</td></tr>
+          <tr><td><strong>Resolution</strong></td><td>0.001 mm</td></tr>
+        </table>
+
+        <h3 class="block-heading"><i class="fas fa-tools"></i> Extensometer Calibration</h3>
+        <ul class="custom-list">
+          <li>Calibrated using FASNE calibrator equipped with Baker Digital Dial Gauge.</li>
+          <li>Additional calibrator accessories available on request.</li>
+        </ul>
+
+        <h3 class="block-heading"><i class="fas fa-laptop-code"></i> Optional Digital Indicator & Software</h3>
+        <ul class="custom-list">
+          <li>Optional 1-micron resolution Digital Indicator available.</li>
+          <li>Used with electronic UTM for full automatic evaluation of stress–strain parameters.</li>
+          <li>Provides 0.1% or 0.2% proof stress values automatically.</li>
+          <li>Printable test reports (graph + data) available.</li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ✅ FOOTER SECTION -->
+
+<footer class="footer-section pt-5 pb-4 text-light">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- 🔹 1. Company Info -->
+      <div class="col-lg-4 col-md-6">
+        <img src="../assets/images/logo.png" alt="Indtek Logo" class="mb-3" width="160">
+        <p class="text-white-50">
+          INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP (IEC) — Delivering reliable, precise, and innovative testing
+          equipment and calibration solutions since 2013.
+        </p>
+      </div>
+
+      <!-- 🔹 2. Quick Links -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold text-orange mb-3">Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- 🔹 3. Contact Info -->
+      <div class="col-lg-5 col-md-12">
+        <h5 class="fw-bold text-orange mb-3">Contact Us</h5>
+        <ul class="list-unstyled text-white-50 mb-3">
+          <li><i class="fas fa-map-marker-alt me-2 text-orange"></i> No.19, SF No: 476/4, Lakshmi Garden 3A, Balaji Industrial Estate, Keeranatham, Coimbatore - 641035</li>
+          <li><i class="fas fa-phone me-2 text-orange"></i> +91 902 5858 360 / +91 99 5250 2221</li>
+          <li><i class="fas fa-envelope me-2 text-orange"></i> admin@indtek.co.in</li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="social-links">
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com/@indtekequipmentsandcalibration?si=2FKyB5u2rUz1Zr_a" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="mt-5 mb-3 text-white-50">
+
+    <!-- Copyright -->
+    <div class="text-center small text-white-50">
+      © <span id="year"></span> INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP. All Rights Reserved.
+    </div>
+  </div>
+
+  <!-- 🡅 Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+</footer>
+
+
+<!-- ✅ Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// 3D Float Mouse Tilt
+const img3d = document.querySelector(".product-img-3d");
+
+img3d.addEventListener("mousemove", (e) => {
+  const rect = img3d.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
+  const rotateY = (x - rect.width / 2) / 25;
+  const rotateX = (rect.height / 2 - y) / 25;
+
+  img3d.style.transform =
+    `perspective(1000px) 
+    rotateX(${rotateX}deg) 
+    rotateY(${rotateY}deg) 
+    scale(1.07)`;
+});
+
+img3d.addEventListener("mouseleave", () => {
+  img3d.style.transform = 
+    "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)";
+});
+</script>
+
+
+
+</body>
+</html>
