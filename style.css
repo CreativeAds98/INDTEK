@@ -63,6 +63,69 @@
   color: #ff6600;
 }
 
+
+/* ===================================== */
+/* HERO ORANGE GRADIENT BADGE – EFFECTS  */
+/* ===================================== */
+
+.hero-badge {
+  position: relative;
+  background: linear-gradient(135deg, #ff7a18, #ff9800);
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  box-shadow: 0 10px 25px rgba(255, 122, 24, 0.35);
+  overflow: hidden;
+  animation: pulseGlow 3s infinite ease-in-out;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* 🌟 Soft glow pulse */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 10px 25px rgba(255, 122, 24, 0.30);
+  }
+  50% {
+    box-shadow: 0 14px 35px rgba(255, 122, 24, 0.55);
+  }
+  100% {
+    box-shadow: 0 10px 25px rgba(255, 122, 24, 0.30);
+  }
+}
+
+/* ✨ Shimmer shine layer */
+.hero-badge::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  animation: shimmer 4.5s infinite;
+}
+
+/* ✨ Shimmer animation */
+@keyframes shimmer {
+  0% { left: -120%; }
+  60% { left: 120%; }
+  100% { left: 120%; }
+}
+
+/* 🚀 Hover interaction */
+.hero-badge:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 18px 45px rgba(255, 122, 24, 0.6);
+}
+
+
+
+
 /* Buttons */
 .btn-primary {
   background-color: #ff6600;
