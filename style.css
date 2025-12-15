@@ -46,6 +46,14 @@
   background-color: #e05500;
 }
 
+/* 🔹 Increase Website Logo Size */
+.navbar-brand img {
+  height: 55px;          /* default is usually ~40px */
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+
 
 
 /* ✅ Hero Section */
