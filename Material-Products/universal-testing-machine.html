@@ -140,6 +140,56 @@
   .product-wrapper { padding: 30px 20px; }
 }
 
+/* Download Brochure Button */
+.btn-brochure {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 36px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ff6600, #ff8c33);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(255, 102, 0, 0.35);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover lift */
+.btn-brochure:hover {
+  color: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(255, 102, 0, 0.45);
+}
+
+/* Soft ripple shine */
+.btn-brochure::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255,255,255,0.25);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn-brochure:hover::after {
+  width: 260%;
+  height: 260%;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
   </style>
 </head>
 <body>
@@ -278,6 +328,17 @@
       </div>
 
     </div>
+
+              <!-- DOWNLOAD BROCHURE -->
+      <div class="text-center mt-5">
+        <a href="../assets/doc/material-products/brinell-hardness-tester.pd"
+          class="btn btn-brochure"
+          download>
+          <i class="fas fa-download me-2"></i>
+          Download Brochure
+        </a>
+      </div>
+
 
   </div>
 </section>
