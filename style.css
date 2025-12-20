@@ -1,5 +1,31 @@
-/* ✅ Hero Section */
+/* =============================== */
+/* BIG LOGO WITHOUT NAVBAR RESIZE */
+/* =============================== */
 
+.navbar-logo {
+  height: 42px;                 /* keep original navbar-safe height */
+  width: auto;
+  transform: scale(2.15);       /* 🔥 visually larger */
+  transform-origin: left center;
+  transition: transform 0.3s ease;
+}
+
+/* Optional hover polish */
+.navbar-logo:hover {
+  transform: scale(1.42);
+}
+
+/* Mobile fine-tuning */
+@media (max-width: 576px) {
+  .navbar-logo {
+    transform: scale(1.2);
+  }
+}
+
+
+
+/* ✅ Hero Section */
+/*
 
 .navbar-brand img {
   height: 50px;
@@ -8,6 +34,8 @@
 .navbar-brand img:hover {
   transform: scale(1.05);
 }
+*/
+/* Navbar Links */
 .nav-link {
   color: #002b5b !important;
   font-weight: 600;

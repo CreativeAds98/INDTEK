@@ -184,7 +184,7 @@
   <div class="container">
     <!-- Company Logo -->
     <a class="navbar-brand d-flex align-items-center" href="../index.html">
-      <img src="../assets/images/logo.png" alt="Indtek Logo"  class="me-2">
+      <img src="../assets/images/logo.png" alt="Indtek Logo"  class="navbar-logo">
     </a>
 
     <!-- Mobile Toggle -->
@@ -318,6 +318,23 @@
   </div>
 </section>
 
+<!-- ✅ Floating Mail Button -->
+<div class="floating-mail" id="mailIcon" title="Contact Us">
+  <i class="fas fa-envelope"></i>
+</div>
+
+<!-- ✅ Floating Contact Form -->
+<div class="mail-form" id="mailForm">
+  <form>
+    <h5>Contact Us</h5>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="Number" required>
+    <input type="text" placeholder="Mission" required>
+    <textarea placeholder="Message" rows="3" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</div>
 
 
 <!-- ✅ FOOTER SECTION -->
@@ -328,10 +345,10 @@
       
       <!-- 🔹 1. Company Info -->
       <div class="col-lg-4 col-md-6">
-        <img src="../assets/images/logo.png" alt="Indtek Logo" class="mb-3" width="160">
+        <img src="../assets/images/footer-logo.png" alt="Indtek Logo" class="mb-3" width="240">
         <p class="text-white-50">
-          INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP (IEC) — Delivering reliable, precise, and innovative testing
-          equipment and calibration solutions since 2013.
+          INDTEK EQUIPMENTS AND CALIBRATION SERVICES LLP (IEC) — Delivering reliable,<br> precise, and innovative testing
+          equipment<br> and calibration solutions since 2013.
         </p>
       </div>
 
@@ -408,6 +425,34 @@ img3d.addEventListener("mouseleave", () => {
 });
 </script>
 
+<!-- ✅ SCRIPTS  For flaoting button-->
+<script>
+const mailIcon = document.getElementById('mailIcon');
+const mailForm = document.getElementById('mailForm');
+
+mailIcon.addEventListener('click', () => {
+  mailForm.classList.toggle('active');
+});
+</script>
+
+<!-- ✅ SCRIPTS  For Arrow Button-->
+<script>
+// Dynamic year in footer
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Scroll-to-top functionality
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+window.onscroll = function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+};
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
 
 
 </body>
