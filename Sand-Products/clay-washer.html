@@ -299,15 +299,46 @@
 
 <!-- ✅ Floating Contact Form -->
 <div class="mail-form" id="mailForm">
-  <form>
-    <h5>Contact Us</h5>
-    <input type="text" placeholder="Name" required>
-    <input type="email" placeholder="Email" required>
-    <input type="text" placeholder="Number" required>
-    <input type="text" placeholder="Mission" required>
-    <textarea placeholder="Message" rows="3" required></textarea>
-    <button type="submit">Send</button>
-  </form>
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+      <!-- Web3Forms Access Key -->
+      <input type="hidden" name="access_key" value="82ddfa77-cc30-4b61-8cb5-2e5a3ede8950">
+
+      <h5>Contact Us</h5>
+
+      <input 
+        type="text" 
+        name="name"
+        placeholder="Name" 
+        required>
+
+      <input 
+        type="email" 
+        name="email"
+        placeholder="Email" 
+        required>
+
+      <input 
+        type="text" 
+        name="number"
+        placeholder="Number" 
+        required>
+
+      <input 
+        type="text" 
+        name="mission"
+        placeholder="Mission" 
+        required>
+
+      <textarea 
+        name="message"
+        placeholder="Message" 
+        rows="3" 
+        required></textarea>
+
+      <button type="submit">Send</button>
+
+    </form>
 </div>
 
 <!-- ✅ FOOTER SECTION -->
